@@ -3,11 +3,14 @@ sudo: true
 go:
 - '1.5'
 deploy:
-  edge: true
-  provider: cloudfoundry
+  provider:
+    provider: cloudfoundry
   api: https://api.ng.bluemix.net
+  username: germanatt@us.ibm.com
+  password:
+    secure: kTujNedCRowWyX9455CN7YUHpyP3OkVPelymKhAeoyRxpR1o078XhtEsvfSFaVuiCuns40+7WuHnNXkSBydjFkGdG8Gmx5lzMw1R1VwM/ERN2FcdYGPkR++7mICsYkiwgtoJmMWewRcYngsP658I6nA0W8XvsWSH1hAlENDmSZMM+9TxYxcMaBNeDBad3UfOlU/CiApc0bE7yf7yH0mc/FKDRP+siQP4EZAEHEK8gpYiq6qE9diadrjmZl8fBbMxDHFgNmDu96QwFG416OxAg9PToUS3ByTMlkZzVMPWa4dq/idxc11HVaEOL4GnSL1s4J0H3zdO8C2MwHxF3Mb1JLrl5IEnl0M5G88aYxdzCdibk2fzPyFLoV+/PwhLGJNcZZJ+Oz7MOQ98UszN2+2yoGORKUjSfrLuX/y6suEgKbcZ3j2jBKdvygIom1aRMyHilNvh+ovQp+8iVOdOEjQ+4GHFBZ0+W3gIrLydR2S621qVNI2zUOD8qd7vLhNJiNNQIdcDzRx2lDnDW+28PIC8U+n1qSXjZ3boMnPQxeYPmv1w7O9Vc8/rDTCPTUAEllFgrIEd2ZZM5ppaDZcHEAMDvoegH/AL0fLwfD/bn5qGs1hP6gLhiSh9X9FL4/EJwQ2OMeJQu4JxuvIhX8cfK1WWKPvqtQtfneTn8Wx5JWt9Dq8=
   organization: germanatt
   space: dev
   on:
-    branch: master
     repo: germanattanasio/slack-pester-non-2fa-users
+    branch: master
