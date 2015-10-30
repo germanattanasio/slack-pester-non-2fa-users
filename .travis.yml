@@ -3,8 +3,8 @@ sudo: true
 go:
 - '1.5'
 deploy:
-  provider:
-    provider: cloudfoundry
+  edge: true
+  provider: cloudfoundry
   api: https://api.ng.bluemix.net
   username: germanatt@us.ibm.com
   password:
