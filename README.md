@@ -1,7 +1,9 @@
 # slack-pester-non-2fa-users
 [![Build Status](https://api.travis-ci.org/germanattanasio/slack-pester-non-2fa-users.svg)](https://travis-ci.org/germanattanasio/slack-pester-non-2fa-users)
 
-Bluemix application to annoy users who do not have 2 Factor Authentication enabled.
+Bluemix application to annoy users who do not have [2 Factor Authentication](https://slack.zendesk.com/hc/en-us/articles/204509068-Enabling-two-factor-authentication) enabled.
+
+The app will send a message in the `#general` channel and to each user in a private channel until they enable 2F authentication.
 
 ## Getting Started
 
