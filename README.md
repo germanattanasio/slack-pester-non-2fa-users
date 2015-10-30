@@ -1,5 +1,5 @@
 # slack-pester-non-2fa-users
-[![Build Status](https://api.travis-ci.org/IBM-Bluemix/slack-pester-non-2fa-users.svg)](https://travis-ci.org/IBM-Bluemix/slack-pester-non-2fa-users)
+[![Build Status](https://api.travis-ci.org/germanattanasio/slack-pester-non-2fa-users.svg)](https://travis-ci.org/germanattanasio/slack-pester-non-2fa-users)
 
 Bluemix application to annoy users who do not have 2 Factor Authentication enabled.
 
