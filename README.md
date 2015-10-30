@@ -26,4 +26,4 @@ In order to use the application you will need an `token` from Slack.
 
 ## License
 
-This library is licensed under Apache 2.0. Full license text is available in [COPYING][LICENSE].
+This library is licensed under Apache 2.0. Full license text is available in [COPYING](https://github.com/germanattanasio/slack-pester-non-2fa-users/blob/master/LICENSE).
