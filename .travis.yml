@@ -1,7 +1,5 @@
-language: go
+language: node
 sudo: true
-go:
-- '1.5'
 deploy:
   edge: true
   provider: cloudfoundry

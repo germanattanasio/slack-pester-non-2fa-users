@@ -1,7 +1,8 @@
 applications:
-- path: .
-  memory: 512MB
-  name: slack-annoy-users-2fa-wdc
+- name: slack-annoy-users-2fa-wdc
+  path: .
+  memory: 512M
   no-route: true
-  command: slack-disable-2fa
-  buildpack: https://github.com/cloudfoundry/go-buildpack.git
+  command: node app.js
+  env:
+    NODE_ENV: production

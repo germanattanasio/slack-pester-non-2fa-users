@@ -1,0 +1,29 @@
+{
+  "name": "slack-annoy-users-2fa-wdc",
+  "version": "0.1.0",
+  "description": "Bluemix application to annoy users who do not have 2 Factor Authentication enabled.",
+  "engines": {
+    "node": ">=0.10.38"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/germanattanasio/slack-annoy-users-2fa.git"
+  },
+  "author": "IBM Corp.",
+  "contributors": [
+    {
+      "name": "German Attanasio Ruiz",
+      "email": "germanatt@us.ibm.com"
+    }
+  ],
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/germanattanasio/slack-annoy-users-2fa/issues"
+  },
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "slack-node": "^0.1.3"
+  }
+}
