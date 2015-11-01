@@ -77,25 +77,24 @@ function annoyUser(client, user){
  * @param  {String} message The message
  */
 function sendMessage (client, channel, message) {
-  console.log(channel,message.slice(0,50));
-  // client.api('chat.postMessage', {
-  //   text: message,
-  //   channel: channel
-  // }, function(err, response) {
-  //   if (err){
-  //     console.log('there was an error');
-  //   } else {
-  //     console.log(response);
-  //   }
-  // });
+  client.api('chat.postMessage', {
+    text: message,
+    channel: channel
+  }, function(err, response) {
+    if (err){
+      console.log('chat.postMessage error:', err);
+    } else {
+      console.log(response);
+    }
+  });
 }
 
 /**
  * Annoying users without 2FA authentication
  */
 function check2FA() {
-  var adminSlack = new Slack(process.env.SLACK_ADMIN_API_KEY || '<admin-token>');
-  var botSlack = new Slack(process.env.SLACK_BOT_API_KEY || '<bot-token>');
+  var adminSlack = new Slack(process.env.SLACK_ADMIN_API_KEY);
+  var botSlack = new Slack(process.env.SLACK_BOT_API_KEY);
   adminSlack.api('users.list', function(err, response) {
     if (err){
       console.log('users.list error:', err);
@@ -107,5 +106,7 @@ function check2FA() {
   });
 }
 
-setInterval(check2FA, ONE_DAY);
-check2FA();
+if (process.env.SLACK_ADMIN_API_KEY && process.env.SLACK_BOT_API_KEY) {
+  setInterval(check2FA, ONE_DAY);
+  check2FA();
+}

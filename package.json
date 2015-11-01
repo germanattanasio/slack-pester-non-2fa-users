@@ -21,7 +21,7 @@
     "url": "https://github.com/germanattanasio/slack-annoy-users-2fa/issues"
   },
   "scripts": {
-    "start": "node index.js"
+    "start": "node app.js"
   },
   "dependencies": {
     "slack-node": "^0.1.3"
