@@ -52,7 +52,7 @@ function shameUsers (client, users) {
     return;
   var message = 'Hello everyone...\n\n' +
 		'The following users have not enabled 2 Factor auth ' +
-    users.join(', ') + '\n\n' +
+    users.map(function(u) {return '@'+ u; }).join(', ') + '\n\n' +
 		slackPolicy;
 
 	sendMessage(client, CHANNEL_GENERAL, message);
