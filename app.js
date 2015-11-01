@@ -79,7 +79,9 @@ function annoyUser(client, user){
 function sendMessage (client, channel, message) {
   client.api('chat.postMessage', {
     text: message,
-    channel: channel
+    channel: channel,
+    as_user:true,
+    link_names: 1
   }, function(err, response) {
     if (err){
       console.log('chat.postMessage error:', err);
