@@ -22,8 +22,7 @@ var slackPolicy = 'To use Slack you must have 2FA enabled.'+
   'You will be reminded every 24 hours until you enabled 2FA.\n\n' +
 	'Every so often we will disable accounts that do not have 2FA turned on. ' +
   'To avoid this please turn on 2FA now. ' +
-  'Instructions for 2FA can be found at ' +
-  'https://slack.zendesk.com/hc/en-us/articles/204509068-Enabling-two-factor-authentication.\n\n';
+  'https://wdcservices.slack.com/account/settings#two_factor\n\n';
 
 var CHANNEL_GENERAL = '#general';
 var ONE_DAY = 24*60*60*1000;
